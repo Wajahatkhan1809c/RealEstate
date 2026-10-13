@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Real Estate Solutions | Hasaan Real Estate</title>
+  <meta name="description" content="Discover professional real estate services in Karachi: Property Buying, Property Selling, Property Rental, Property Investment, Consultation, and Property Management." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');
+  (function () {
+    'use strict';
+    var S = ['.section-title-wrap','.service-card-item','.why-us-card-item','.testimonial-col','.approach-step-card','.home-service-card','.property-grid-item','.service-visual-col','.service-content-col','.about-preview-img-wrap','.cta-banner-content','.google-strip-flex','.premium-form-card','.feature-box','.stat-item-box','.contact-info-card','.consult-preview-media','.consult-preview-body','.service-stat-item','.service-intro-band','.category-grid-item','.guidance-item','.location-item','.locations-visual-item','[data-reveal]'];
+    function patrol() {
+      var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+      var nodes = document.querySelectorAll(S.join(','));
+      for (var i = 0; i < nodes.length; i++) {
+        if (nodes[i].getBoundingClientRect().top <= vh - 30) nodes[i].classList.add('revealed');
+      }
+    }
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () { patrol(); ticking = false; });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', patrol, { passive: true });
+    window.addEventListener('load', patrol, { passive: true });
+    if (document.readyState !== 'loading') patrol();
+    else document.addEventListener('DOMContentLoaded', patrol);
+    setInterval(patrol, 1300);
+    window.RevealEngine = { patrol: patrol };
+    window.revealScan = patrol;
+  })();</script>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jpeg" />
+</head>
+<body>
+
+  <!-- ================= 1. BALANCED NAVBAR ================= -->
+  <header class="site-navbar">
+    <div class="container-site">
+      <div class="navbar-balanced-grid">
+        <!-- LEFT: Brand Logo -->
+        <a href="index.html" class="navbar-brand-wrap">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img" />
+        </a>
+
+        <!-- CENTER: Centered Navigation Links -->
+        <nav class="navbar-center-menu" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link-item">Home</a>
+          <a href="properties.html" class="nav-link-item">Properties</a>
+          <a href="services.html" class="nav-link-item active">Services</a>
+          <a href="about.html" class="nav-link-item">About Us</a>
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </nav>
+
+        <!-- RIGHT: CTA Button -->
+        <div class="navbar-right-action">
+          <a href="consultation.html" class="btn-primary-custom">
+            <i class="bi bi-calendar-check"></i> Book a Consultation
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-nav-toggle" type="button" aria-label="Toggle Navigation Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="index.html" class="nav-link-item">Home</a>
+    <a href="properties.html" class="nav-link-item">Properties</a>
+    <a href="services.html" class="nav-link-item active">Services</a>
+    <a href="about.html" class="nav-link-item">About Us</a>
+    <a href="contact.html" class="nav-link-item">Contact</a>
+    <div class="pt-2">
+      <a href="consultation.html" class="btn-primary-custom w-100 justify-content-center">
+        <i class="bi bi-calendar-check"></i> Book a Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= 2. INNER PAGE HERO ================= -->
+  <section class="inner-page-hero">
+    <div class="container-site position-relative z-2">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="active">Services</span>
+      </div>
+      <span class="section-badge badge-white mb-3">OUR SERVICES</span>
+      <h1 class="inner-hero-title font-display">Professional Real Estate Solutions</h1>
+      <p class="inner-hero-subtitle">
+        Tailored, data-driven advisory across residential purchasing, commercial liquidation, executive leasing, and high-yield property investment in Karachi.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 2b. SERVICE INTRO & TRUST STATS ================= -->
+  <section class="service-intro-band">
+    <div class="container-site text-center">
+      <span class="service-intro-badge mx-auto"><i class="bi bi-patch-check-fill"></i> End-to-end advisory</span>
+      <h2 class="section-heading font-display mt-3 mb-2">One trusted partner for every property decision</h2>
+      <p class="section-subtext mx-auto" style="max-width: 720px;">
+        From first viewing to final transfer, our senior consultants manage every stage with verified inventory, transparent pricing, and disciplined execution.
+      </p>
+
+      <div class="service-stat-strip text-start">
+        <div class="service-stat-item">
+          <span class="stat-value">12+</span>
+          <span class="stat-label">Years of market expertise</span>
+        </div>
+        <div class="service-stat-item">
+          <span class="stat-value">850+</span>
+          <span class="stat-label">Successful transactions</span>
+        </div>
+        <div class="service-stat-item">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Verified listings</span>
+        </div>
+        <div class="service-stat-item">
+          <span class="stat-value">5.0</span>
+          <span class="stat-label">Google rated service</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. ALTERNATING SERVICE SECTIONS ================= -->
+
+  <!-- SECTION 01: PROPERTY BUYING (White Background | Image Left, Content Right) -->
+  <section class="service-page-section bg-white" id="service-buying">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <!-- Large Image Left -->
+        <div class="col-lg-6 service-visual-col">
+          <div class="service-luxury-frame">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80" alt="Property Buying in Karachi" class="service-luxury-img" />
+            <div class="service-frame-badge">
+              <i class="bi bi-house-check-fill"></i>
+              <span>Verified DHA & Clifton Inventory</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Right -->
+        <div class="col-lg-6 service-content-col">
+          <div class="service-side-num">01</div>
+          <div class="service-kicker-wrap">
+            <span class="service-decor-line"></span>
+            <span class="service-number-pill">SECTION 01 · BUYER ADVISORY</span>
+          </div>
+          <h2 class="service-heading-text font-display">Property Buying</h2>
+          <p class="service-desc-text">
+            Find the right property with professional guidance from initial market discovery to final registry and key handover. We curate verified houses, luxury villas, and prime plots across DHA Karachi and Clifton tailored to your family's lifestyle and wealth preservation goals.
+          </p>
+
+          <!-- Feature List -->
+          <ul class="service-feature-checklist">
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Property Search:</strong> Hand-picked curated shortlists matching your architectural and spatial requirements</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Market Analysis:</strong> Real-time pricing trends across sub-sectors, eliminating speculation</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Property Evaluation:</strong> Structural inspection, dimension checks, and boundary verification</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Negotiation Support:</strong> Direct, firm price advocacy grounded in actual closed comparables</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Documentation Guidance:</strong> Title deed verification, NDC clearance, and Cantonment Board transfers</span>
+            </li>
+          </ul>
+
+          <div class="service-cta-block">
+            <a href="properties.html?purpose=Buy" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-search"></i> Explore Buying Services
+            </a>
+            <a href="consultation.html?service=Buying" class="btn-outline-custom btn-lg-custom">
+              Book Buyer Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02: PROPERTY SELLING (Content Left, Image Right) -->
+  <section class="service-page-section bg-alt" id="service-selling">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <!-- Content Left -->
+        <div class="col-lg-6 service-content-col order-2 order-lg-1">
+          <div class="service-side-num">02</div>
+          <div class="service-kicker-wrap">
+            <span class="service-decor-line"></span>
+            <span class="service-number-pill">SECTION 02 · SELLER ADVISORY</span>
+          </div>
+          <h2 class="service-heading-text font-display">Property Selling</h2>
+          <p class="service-desc-text">
+            Market your property professionally and connect with qualified, solvent buyers. From precision pricing benchmarks to discreet marketing campaigns, our senior consultants ensure maximum asset valuation while protecting your privacy.
+          </p>
+
+          <!-- Feature List -->
+          <ul class="service-feature-checklist">
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Property Valuation:</strong> Comparative market analysis (CMA) that prevents underselling</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Professional Marketing:</strong> Architectural photography, digital showcases, and private buyer network outreach</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Buyer Screening:</strong> Rigorous financial vetting prior to scheduling in-person private viewings</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Negotiation:</strong> Protecting your commercial bottom line with seasoned transaction advocacy</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Transaction Support:</strong> Escrow schedule monitoring, token agreements, and safe payment disbursement</span>
+            </li>
+          </ul>
+
+          <div class="service-cta-block">
+            <a href="consultation.html?service=Selling" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-tag-fill"></i> Sell Your Property
+            </a>
+            <a href="contact.html" class="btn-outline-custom btn-lg-custom">
+              Contact Sales Team
+            </a>
+          </div>
+        </div>
+
+        <!-- Large Image Right -->
+        <div class="col-lg-6 service-visual-col order-1 order-lg-2">
+          <div class="service-luxury-frame">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Property Selling Advisory" class="service-luxury-img" />
+            <div class="service-frame-badge">
+              <i class="bi bi-shield-lock-fill"></i>
+              <span>High-Net-Worth Private Buyer Network</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 03: PROPERTY RENTAL (White Background | Image Left, Content Right) -->
+  <section class="service-page-section bg-white" id="service-rental">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <!-- Large Image Left -->
+        <div class="col-lg-6 service-visual-col">
+          <div class="service-luxury-frame">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80" alt="Property Rental in Karachi" class="service-luxury-img" />
+            <div class="service-frame-badge">
+              <i class="bi bi-key-fill"></i>
+              <span>Corporate & Family Leases</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Right -->
+        <div class="col-lg-6 service-content-col">
+          <div class="service-side-num">03</div>
+          <div class="service-kicker-wrap">
+            <span class="service-decor-line"></span>
+            <span class="service-number-pill">SECTION 03 · LEASING & TENANCY</span>
+          </div>
+          <h2 class="service-heading-text font-display">Property Rental</h2>
+          <p class="service-desc-text">
+            Connecting verified corporate executives, multinational employees, and reputable families with prime residential villas and luxury apartments. We eliminate the typical friction of leasing through airtight legal documentation and smooth handovers.
+          </p>
+
+          <!-- Feature List -->
+          <ul class="service-feature-checklist">
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Property Search:</strong> Access to luxury furnished and unfurnished rentals in prime gated sectors</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Tenant Matching:</strong> Background checks, employment credentials, and corporate reference verifications</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Rental Guidance:</strong> Realistic rental yield benchmarks for landlords and fair market rates for tenants</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Documentation:</strong> Legally binding tenancy contracts drafted in compliance with Sindh Rented Premises Ordinance</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Management Support:</strong> Detailed move-in inventory audits, meter verification, and security deposit management</span>
+            </li>
+          </ul>
+
+          <div class="service-cta-block">
+            <a href="properties.html?purpose=Rent" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-houses"></i> Find a Rental
+            </a>
+            <a href="consultation.html?service=Renting" class="btn-outline-custom btn-lg-custom">
+              List Your Rental
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04: PROPERTY INVESTMENT (Content Left, Image Right) -->
+  <section class="service-page-section bg-alt" id="service-investment">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <!-- Content Left -->
+        <div class="col-lg-6 service-content-col order-2 order-lg-1">
+          <div class="service-side-num">04</div>
+          <div class="service-kicker-wrap">
+            <span class="service-decor-line"></span>
+            <span class="service-number-pill">SECTION 04 · CAPITAL & WEALTH GROWTH</span>
+          </div>
+          <h2 class="service-heading-text font-display">Property Investment</h2>
+          <p class="service-desc-text">
+            Make calculated, data-backed real estate investments engineered for solid capital appreciation and reliable cash-flow yields. We analyze local macroeconomic indicators, infrastructure expansions, and tenant demand cycles to safeguard your capital.
+          </p>
+
+          <!-- Feature List -->
+          <ul class="service-feature-checklist">
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Market Research:</strong> Macro and micro-trend analysis across commercial boulevards and high-density zones</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Investment Opportunities:</strong> Early access to vetted pre-launch commercial plazas, showrooms, and prime plots</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>ROI Analysis:</strong> Detailed net rental yield forecasts, tax burden estimations, and exit liquidity multiples</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Risk Assessment:</strong> Legal title verification, regulatory zoning checks, and timeline vulnerability audits</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Long-Term Planning:</strong> Portfolio diversification strategies across residential, commercial, and land bank assets</span>
+            </li>
+          </ul>
+
+          <div class="service-cta-block">
+            <a href="consultation.html?service=Investment" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-graph-up-arrow"></i> Discuss Investment
+            </a>
+            <a href="properties.html?type=Commercial" class="btn-outline-custom btn-lg-custom">
+              Explore Commercial Assets
+            </a>
+          </div>
+        </div>
+
+        <!-- Large Image Right -->
+        <div class="col-lg-6 service-visual-col order-1 order-lg-2">
+          <div class="service-luxury-frame">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" alt="Property Investment Analysis" class="service-luxury-img" />
+            <div class="service-frame-badge">
+              <i class="bi bi-pie-chart-fill"></i>
+              <span>High Yield & Capital Preservation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 05: PROPERTY CONSULTATION (White Background | Image Left, Content Right) -->
+  <section class="service-page-section bg-white" id="service-consultation">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <!-- Large Image Left -->
+        <div class="col-lg-6 service-visual-col">
+          <div class="service-luxury-frame">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80" alt="Private Real Estate Consultation" class="service-luxury-img" />
+            <div class="service-frame-badge">
+              <i class="bi bi-person-badge-fill"></i>
+              <span>Principal-Led Advisory Session</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Right -->
+        <div class="col-lg-6 service-content-col">
+          <div class="service-side-num">05</div>
+          <div class="service-kicker-wrap">
+            <span class="service-decor-line"></span>
+            <span class="service-number-pill">SECTION 05 · STRATEGIC ADVISORY</span>
+          </div>
+          <h2 class="service-heading-text font-display">Property Consultation</h2>
+          <p class="service-desc-text">
+            Get personalized, confidential advice directly from our senior consultants. Whether evaluating family property distribution, assessing the tax impact of recent finance ordinances, or timing a major acquisition, our private sessions give you total clarity.
+          </p>
+
+          <!-- Feature List -->
+          <ul class="service-feature-checklist">
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Personal Consultation:</strong> 1-on-1 strategy meeting in person at our DHA Phase 1 office or online via video call</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Market Insights:</strong> Candid, unbiased perspectives on current Karachi transaction volumes and sentiment</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Property Evaluation:</strong> Formal appraisal reports for asset restructuring, inheritance, and financing</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Investment Guidance:</strong> Capital reallocation analysis across underperforming and prime yield properties</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Decision Support:</strong> Clear scenario modeling with risk mitigation checklists before you sign any contract</span>
+            </li>
+          </ul>
+
+          <div class="service-cta-block">
+            <a href="consultation.html?service=Consultation" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-calendar-check"></i> Book Consultation
+            </a>
+            <a href="https://wa.me/923003084176?text=Hello%20Hasaan%20Real%20Estate%2C%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer" class="btn-whatsapp btn-lg-custom">
+              <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 06: PROPERTY MANAGEMENT (Content Left, Image Right) -->
+  <section class="service-page-section bg-alt" id="service-management">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <!-- Content Left -->
+        <div class="col-lg-6 service-content-col order-2 order-lg-1">
+          <div class="service-side-num">06</div>
+          <div class="service-kicker-wrap">
+            <span class="service-decor-line"></span>
+            <span class="service-number-pill">SECTION 06 · ASSET CARE & OVERSIGHT</span>
+          </div>
+          <h2 class="service-heading-text font-display">Property Management</h2>
+          <p class="service-desc-text">
+            Complete, hands-off property management and procedural legal oversight designed for expatriate Pakistanis, institutional owners, and busy landlords. We protect your physical real estate asset, oversee tenant relations, and manage administrative compliance.
+          </p>
+
+          <!-- Feature List -->
+          <ul class="service-feature-checklist">
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Property Monitoring:</strong> Scheduled physical site inspections with photo/video walkthrough reports sent directly to you</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Tenant Coordination:</strong> Timely rent collection, formal communications, and lease renewal processing</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Maintenance:</strong> Prompt coordination of plumbing, electrical, HVAC, and civil repairs with trusted local contractors</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Rent Management:</strong> Direct bank account transfers, utility payment reconciliations, and tax certificate filings</span>
+            </li>
+            <li class="service-feature-item">
+              <span class="service-feature-check"><i class="bi bi-check-lg"></i></span>
+              <span><strong>Reporting:</strong> Transparent quarterly financial statements covering receipts, expenditures, and net income</span>
+            </li>
+          </ul>
+
+          <div class="service-cta-block">
+            <a href="consultation.html?service=Management" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-arrow-right-circle"></i> Learn More
+            </a>
+            <a href="contact.html" class="btn-outline-custom btn-lg-custom">
+              Inquire With Our Office
+            </a>
+          </div>
+        </div>
+
+        <!-- Large Image Right -->
+        <div class="col-lg-6 service-visual-col order-1 order-lg-2">
+          <div class="service-luxury-frame">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80" alt="Property Management and Asset Care" class="service-luxury-img" />
+            <div class="service-frame-badge">
+              <i class="bi bi-award-fill"></i>
+              <span>Overseas Client Representation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. OUR 4-STEP METHODOLOGY ================= -->
+  <section class="section-padding bg-white border-top border-custom">
+    <div class="container-site">
+      <div class="text-center section-title-wrap mx-auto" style="max-width: 680px;">
+        <span class="section-badge">How We Work</span>
+        <h2 class="section-heading font-display">Our 4-Step Advisory Process</h2>
+        <p class="section-subtext">A disciplined, structured methodology designed to minimize transaction risk, protect your capital, and optimize returns.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-step-card">
+            <div class="approach-step-number">01</div>
+            <h4 class="font-display h5 text-navy mb-2">Understand</h4>
+            <p class="text-secondary-custom small mb-0">We begin with a detailed consultation to capture your lifestyle preferences, capital allocation, target budget, and long-term liquidity horizon.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-step-card">
+            <div class="approach-step-number">02</div>
+            <h4 class="font-display h5 text-navy mb-2">Explore</h4>
+            <p class="text-secondary-custom small mb-0">We screen active and off-market listings to shortlist prime, vetted assets with clean title deeds and authentic documentation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-step-card">
+            <div class="approach-step-number">03</div>
+            <h4 class="font-display h5 text-navy mb-2">Advise</h4>
+            <p class="text-secondary-custom small mb-0">We provide independent price guidance, conduct thorough legal review, and negotiate favorable commercial terms on your behalf.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="approach-step-card">
+            <div class="approach-step-number">04</div>
+            <h4 class="font-display h5 text-navy mb-2">Deliver</h4>
+            <p class="text-secondary-custom small mb-0">We manage seamless transfer completion, authority handovers, and ongoing landlord or tenancy support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. FINAL CALL TO ACTION ================= -->
+  <section class="cta-banner-section">
+    <div class="container-site position-relative z-2">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8 cta-banner-content">
+          <span class="section-badge badge-white">Take the Next Step</span>
+          <h2 class="section-heading text-white font-display mb-3">
+            Ready to Make Your Next Real Estate Move?
+          </h2>
+          <p class="section-subtext text-light mb-4" style="color: #E9DFD1 !important;">
+            Whether you are buying your family residence in DHA Karachi, divesting commercial assets, or looking for structured overseas advisory, our team is ready to guide you.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="properties.html" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-houses"></i> Explore Properties
+            </a>
+            <a href="consultation.html" class="btn-navy-outline btn-lg-custom">
+              <i class="bi bi-calendar-check"></i> Book a Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-site">
+      <div class="row g-5">
+        <!-- Col 1: Brand Info -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img footer-brand-logo" />
+          <p class="small text-secondary-custom mb-3" style="color: #C4B7A4 !important;">
+            <strong>Proprietor:</strong> Fahad hasaan
+          </p>
+          <p class="small leading-relaxed" style="color: #C4B7A4;">
+            A premier Karachi-based real estate consultancy helping clients buy, sell, rent, and invest with complete confidence across DHA, Clifton, Bahria Town, and other prime sectors.
+          </p>
+          <div class="footer-social-links mt-4">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/923003084176" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-primary"></i> Home</a></li>
+            <li><a href="properties.html"><i class="bi bi-chevron-right small text-primary"></i> Properties</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small text-primary"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-primary"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-primary"></i> Contact</a></li>
+            <li><a href="consultation.html"><i class="bi bi-chevron-right small text-primary"></i> Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Properties -->
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Properties</h4>
+          <ul class="footer-links-list">
+            <li><a href="properties.html?type=House"><i class="bi bi-chevron-right small text-primary"></i> Houses</a></li>
+            <li><a href="properties.html?type=Apartment"><i class="bi bi-chevron-right small text-primary"></i> Apartments</a></li>
+            <li><a href="properties.html?type=Plot"><i class="bi bi-chevron-right small text-primary"></i> Plots</a></li>
+            <li><a href="properties.html?type=Commercial"><i class="bi bi-chevron-right small text-primary"></i> Commercial</a></li>
+            <li><a href="properties.html?purpose=Buy"><i class="bi bi-chevron-right small text-primary"></i> For Sale</a></li>
+            <li><a href="properties.html?purpose=Rent"><i class="bi bi-chevron-right small text-primary"></i> For Rent</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Contact Information</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <strong class="text-white d-block">Office Address</strong>
+              Shop# SF-2 Tooba Apartment, DHA Phase I Garden, Karachi, Pakistan
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <strong class="text-white d-block">Phone Support</strong>
+              <a href="tel:03003084176" class="text-light">0300-3084176</a> / <a href="tel:03333477745" class="text-light">0333-3477745</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <strong class="text-white d-block">Email</strong>
+              <a href="mailto:fahadjunejo7@gmail.com" class="text-light">fahadjunejo7@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-clock"></i></div>
+            <div>
+              <strong class="text-white d-block">Working Hours</strong>
+              Monday – Saturday, 10:00 AM – 7:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>© 2026 Hasaan Real Estate. All Rights Reserved.</div>
+        <div class="d-flex gap-4">
+          <a href="about.html" class="text-secondary small">Privacy Policy</a>
+          <a href="about.html" class="text-secondary small">Terms of Service</a>
+          <a href="contact.html" class="text-secondary small">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- Application JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

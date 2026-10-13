@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Details | Hasaan Real Estate</title>
+  <meta name="description" content="View comprehensive property details, photo gallery, floor specifications, features, and direct agent inquiry." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');
+  (function () {
+    'use strict';
+    var S = ['.section-title-wrap','.service-card-item','.why-us-card-item','.testimonial-col','.approach-step-card','.home-service-card','.property-grid-item','.service-visual-col','.service-content-col','.about-preview-img-wrap','.cta-banner-content','.google-strip-flex','.premium-form-card','.feature-box','.stat-item-box','.contact-info-card','.consult-preview-media','.consult-preview-body','.service-stat-item','.service-intro-band','.category-grid-item','.guidance-item','.location-item','.locations-visual-item','[data-reveal]'];
+    function patrol() {
+      var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+      var nodes = document.querySelectorAll(S.join(','));
+      for (var i = 0; i < nodes.length; i++) {
+        if (nodes[i].getBoundingClientRect().top <= vh - 30) nodes[i].classList.add('revealed');
+      }
+    }
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () { patrol(); ticking = false; });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', patrol, { passive: true });
+    window.addEventListener('load', patrol, { passive: true });
+    if (document.readyState !== 'loading') patrol();
+    else document.addEventListener('DOMContentLoaded', patrol);
+    setInterval(patrol, 1300);
+    window.RevealEngine = { patrol: patrol };
+    window.revealScan = patrol;
+  })();</script>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jpeg" />
+</head>
+<body>
+
+  <!-- ================= 1. REDESIGNED BALANCED NAVBAR ================= -->
+  <header class="site-navbar">
+    <div class="container-site">
+      <div class="navbar-balanced-grid">
+        <!-- LEFT: Brand Logo -->
+        <a href="index.html" class="navbar-brand-wrap">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img" />
+        </a>
+
+        <!-- CENTER: Perfectly Centered Navigation Links -->
+        <nav class="navbar-center-menu" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link-item">Home</a>
+          <a href="properties.html" class="nav-link-item active">Properties</a>
+          <a href="services.html" class="nav-link-item">Services</a>
+          <a href="about.html" class="nav-link-item">About Us</a>
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </nav>
+
+        <!-- RIGHT: Prominent CTA Button -->
+        <div class="navbar-right-action">
+          <a href="consultation.html" class="btn-primary-custom">
+            <i class="bi bi-calendar-check"></i> Book a Consultation
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-nav-toggle" type="button" aria-label="Toggle Navigation Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="index.html" class="nav-link-item">Home</a>
+    <a href="properties.html" class="nav-link-item active">Properties</a>
+    <a href="services.html" class="nav-link-item">Services</a>
+    <a href="about.html" class="nav-link-item">About Us</a>
+    <a href="contact.html" class="nav-link-item">Contact</a>
+    <div class="pt-2">
+      <a href="consultation.html" class="btn-primary-custom w-100 justify-content-center">
+        <i class="bi bi-calendar-check"></i> Book a Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= PREMIUM PROPERTY DETAILS BANNER ================= -->
+  <section class="inner-page-hero property-details-banner">
+    <div class="container-site">
+      <nav class="breadcrumb-custom" aria-label="breadcrumb">
+        <a href="index.html"><i class="bi bi-house-door me-1"></i>Home</a>
+        <i class="bi bi-chevron-right"></i>
+        <a href="properties.html">Properties</a>
+        <i class="bi bi-chevron-right"></i>
+        <span class="active" id="property-breadcrumb-title">Loading property...</span>
+      </nav>
+
+      <div class="row align-items-end g-4">
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+            <span id="details-purpose-badge" class="prop-badge badge-buy">For Sale</span>
+            <span id="details-type-badge" class="prop-badge badge-light">House</span>
+          </div>
+          <h1 id="details-title" class="inner-hero-title">Property Details</h1>
+          <div id="details-location" class="d-flex align-items-center fs-6 text-white-50">
+            <i class="bi bi-geo-alt text-white-50 me-2"></i> DHA Karachi
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="details-price-block">
+            <div class="asking-label">Asking Price</div>
+            <div id="details-price" class="font-display">Rs --</div>
+          </div>
+          <a href="#agent-inquiry-card" class="btn-primary-custom btn-lg-custom mt-3">
+            <i class="bi bi-chat-dots me-1"></i> Enquire Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MAIN PROPERTY CONTENT ================= -->
+  <section class="section-padding bg-white" id="property-details-container">
+    <div class="container-site">
+      <div class="row g-5">
+
+        <!-- LEFT COLUMN: Gallery, Specs, Description, Features, Map -->
+        <div class="col-lg-8">
+          <!-- Gallery -->
+          <div class="mb-4">
+            <img id="gallery-main-image" src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80" alt="Main property view" class="gallery-main-img" />
+            <div class="gallery-thumb-grid" id="gallery-thumbs-row">
+              <!-- Injected via properties.js -->
+            </div>
+          </div>
+
+          <!-- Quick Specs Grid -->
+          <div class="row mb-4" id="details-specs-row">
+            <!-- Bed, Bath, Area, Parking injected here -->
+          </div>
+
+          <!-- Description -->
+          <div class="mb-5">
+            <h3 class="font-display h4 text-navy mb-3">About This Property</h3>
+            <p id="details-description" class="text-secondary-custom leading-relaxed fs-6">
+              Loading comprehensive property description...
+            </p>
+          </div>
+
+          <!-- Features & Amenities Checklist -->
+          <div class="mb-5">
+            <h3 class="font-display h4 text-navy mb-3">Property Features & Amenities</h3>
+            <div class="row g-2" id="details-features-list">
+              <!-- Injected dynamically -->
+            </div>
+          </div>
+
+          <!-- Location & Neighborhood Map Placeholder -->
+          <div class="mb-5">
+            <h3 class="font-display h4 text-navy mb-3">Location & Surroundings</h3>
+            <div class="p-4 bg-alt rounded-4 border border-custom mb-3">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="feature-box-icon mb-0" style="width: 44px; height: 44px; font-size: 1.2rem;">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div>
+                  <h5 class="mb-0 text-navy">Prime Sector Location</h5>
+                  <p class="small text-muted mb-0">Direct access to Khayaban arterial roads, commercial precincts, and prestigious educational institutes.</p>
+                </div>
+              </div>
+              <div class="ratio ratio-21x9 rounded-3 overflow-hidden border">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115867.7667232356!2d67.01625906803274!3d24.83444458514578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c5e8c156f05%3A0xbcf2f68595d2c7e0!2sDefence%20Housing%20Authority%2C%20Karachi!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Property Area Map"></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: Sticky Agent Inquiry & Action Box -->
+        <div class="col-lg-4">
+          <div class="agent-inquiry-card" id="agent-inquiry-card">
+            <!-- Agent Header -->
+            <div class="d-flex align-items-center gap-3 mb-4 pb-3 border-bottom border-custom">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Fahad hasaan" class="agent-avatar" />
+              <div>
+                <h5 class="mb-0 text-navy font-display">Fahad hasaan</h5>
+                <span class="text-primary-custom small fw-semibold d-block">Senior Consultant & Proprietor</span>
+                <span class="text-muted small"><i class="bi bi-star-fill text-warning"></i> 5.0 Rating (Google Verified)</span>
+              </div>
+            </div>
+
+            <!-- Direct Contact Buttons -->
+            <div class="d-flex flex-column gap-2 mb-4">
+              <a href="consultation.html" class="btn-primary-custom w-100 justify-content-center">
+                <i class="bi bi-calendar-check"></i> Book a Consultation
+              </a>
+              <a href="tel:03003084176" class="btn-outline-custom w-100 justify-content-center">
+                <i class="bi bi-telephone-fill text-primary"></i> Call: 0300-3084176
+              </a>
+              <a id="details-whatsapp-btn" href="https://wa.me/923003084176" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-100 justify-content-center">
+                <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
+
+            <!-- Fast Inquiry Form -->
+            <div class="bg-alt p-3 rounded-3 border border-custom">
+              <h6 class="text-navy mb-3"><i class="bi bi-send me-1 text-primary"></i> Send Direct Inquiry</h6>
+
+              <div id="inquiry-success-message" class="alert alert-success small mb-0 py-3" style="display: none;">
+                <i class="bi bi-check-circle-fill me-1"></i> Inquiry sent! Fahad will contact you within 2 hours.
+              </div>
+
+              <form id="property-inquiry-form">
+                <input type="hidden" id="inquiry-property-subject" name="subject" value="General Inquiry" />
+                <div class="mb-2">
+                  <input type="text" name="name" required class="form-control form-control-sm" placeholder="Your Full Name" />
+                </div>
+                <div class="mb-2">
+                  <input type="tel" name="phone" required class="form-control form-control-sm" placeholder="Your Phone / WhatsApp" />
+                </div>
+                <div class="mb-2">
+                  <input type="email" name="email" required class="form-control form-control-sm" placeholder="Your Email Address" />
+                </div>
+                <div class="mb-3">
+                  <textarea name="message" rows="3" class="form-control form-control-sm" placeholder="I would like to schedule a site visit or request more documents..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary-custom w-100 py-2 text-sm justify-content-center">
+                  Submit Inquiry
+                </button>
+              </form>
+            </div>
+
+            <!-- Trust Note -->
+            <div class="mt-3 text-center">
+              <span class="small text-muted"><i class="bi bi-shield-check text-success me-1"></i> Strictly confidential & zero spam guarantee.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= SIMILAR PROPERTIES ================= -->
+      <div class="mt-5 pt-5 border-top border-custom">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="font-display h3 text-navy mb-0">Similar Opportunities</h3>
+          <a href="properties.html" class="btn-outline-custom btn-sm">Explore All</a>
+        </div>
+        <div class="row g-4" id="similar-properties-grid">
+          <!-- Injected via properties.js -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-site">
+      <div class="row g-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img footer-brand-logo" />
+          <p class="small text-secondary-custom mb-3" style="color: #C4B7A4 !important;">
+            <strong>Proprietor:</strong> Fahad hasaan
+          </p>
+          <p class="small leading-relaxed" style="color: #C4B7A4;">
+            A premier Karachi-based real estate consultancy helping clients buy, sell, rent, and invest with complete confidence across DHA, Clifton, Bahria Town, and other prime sectors.
+          </p>
+          <div class="footer-social-links mt-4">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/923003084176" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-primary"></i> Home</a></li>
+            <li><a href="properties.html"><i class="bi bi-chevron-right small text-primary"></i> Properties</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small text-primary"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-primary"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-primary"></i> Contact</a></li>
+            <li><a href="consultation.html"><i class="bi bi-chevron-right small text-primary"></i> Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Properties</h4>
+          <ul class="footer-links-list">
+            <li><a href="properties.html?type=House"><i class="bi bi-chevron-right small text-primary"></i> Houses</a></li>
+            <li><a href="properties.html?type=Apartment"><i class="bi bi-chevron-right small text-primary"></i> Apartments</a></li>
+            <li><a href="properties.html?type=Plot"><i class="bi bi-chevron-right small text-primary"></i> Plots</a></li>
+            <li><a href="properties.html?type=Commercial"><i class="bi bi-chevron-right small text-primary"></i> Commercial</a></li>
+            <li><a href="properties.html?purpose=Buy"><i class="bi bi-chevron-right small text-primary"></i> For Sale</a></li>
+            <li><a href="properties.html?purpose=Rent"><i class="bi bi-chevron-right small text-primary"></i> For Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Contact Information</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <strong class="text-white d-block">Office Address</strong>
+              Shop# SF-2 Tooba Apartment, DHA Phase I Garden, Karachi, Pakistan
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <strong class="text-white d-block">Phone Support</strong>
+              <a href="tel:03003084176" class="text-light">0300-3084176</a> / <a href="tel:03333477745" class="text-light">0333-3477745</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <strong class="text-white d-block">Email</strong>
+              <a href="mailto:fahadjunejo7@gmail.com" class="text-light">fahadjunejo7@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-clock"></i></div>
+            <div>
+              <strong class="text-white d-block">Working Hours</strong>
+              Monday – Saturday, 10:00 AM – 7:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>© 2026 Hasaan Real Estate. All Rights Reserved.</div>
+        <div class="d-flex gap-4">
+          <a href="about.html" class="text-secondary small">Privacy Policy</a>
+          <a href="about.html" class="text-secondary small">Terms of Service</a>
+          <a href="contact.html" class="text-secondary small">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- Application JS -->
+  <script src="js/properties.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
