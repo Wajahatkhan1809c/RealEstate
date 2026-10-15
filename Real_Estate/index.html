@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasaan Real Estate | Sale, Purchase & Rent in Karachi</title>
+  <meta name="description" content="Hasaan Real Estate helps you buy, sell, rent and invest in premier residential and commercial properties across DHA Karachi, Clifton and prime locations." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');
+  (function () {
+    'use strict';
+    var S = ['.section-title-wrap','.service-card-item','.why-us-card-item','.testimonial-col','.approach-step-card','.home-service-card','.property-grid-item','.service-visual-col','.service-content-col','.about-preview-img-wrap','.cta-banner-content','.google-strip-flex','.premium-form-card','.feature-box','.stat-item-box','.contact-info-card','.consult-preview-media','.consult-preview-body','.service-stat-item','.service-intro-band','.category-grid-item','.guidance-item','.location-item','.locations-visual-item','[data-reveal]'];
+    function patrol() {
+      var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+      var nodes = document.querySelectorAll(S.join(','));
+      for (var i = 0; i < nodes.length; i++) {
+        if (nodes[i].getBoundingClientRect().top <= vh - 30) nodes[i].classList.add('revealed');
+      }
+    }
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () { patrol(); ticking = false; });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', patrol, { passive: true });
+    window.addEventListener('load', patrol, { passive: true });
+    if (document.readyState !== 'loading') patrol();
+    else document.addEventListener('DOMContentLoaded', patrol);
+    setInterval(patrol, 1300);
+    window.RevealEngine = { patrol: patrol };
+    window.revealScan = patrol;
+  })();</script>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jpeg" />
+</head>
+<body>
+
+  <!-- ================= 1. REDESIGNED BALANCED NAVBAR ================= -->
+  <header class="site-navbar">
+    <div class="container-site">
+      <div class="navbar-balanced-grid">
+        <!-- LEFT: Brand Logo Treatment -->
+        <a href="index.html" class="navbar-brand-wrap">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img" />
+        </a>
+
+        <!-- CENTER: Perfectly Centered Navigation Links -->
+        <nav class="navbar-center-menu" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link-item active">Home</a>
+          <a href="properties.html" class="nav-link-item">Properties</a>
+          <a href="services.html" class="nav-link-item">Services</a>
+          <a href="about.html" class="nav-link-item">About Us</a>
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </nav>
+
+        <!-- RIGHT: Prominent CTA Button -->
+        <div class="navbar-right-action">
+          <a href="consultation.html" class="btn-primary-custom">
+            <i class="bi bi-calendar-check"></i> Book a Consultation
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-nav-toggle" type="button" aria-label="Toggle Navigation Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="index.html" class="nav-link-item active">Home</a>
+    <a href="properties.html" class="nav-link-item">Properties</a>
+    <a href="services.html" class="nav-link-item">Services</a>
+    <a href="about.html" class="nav-link-item">About Us</a>
+    <a href="contact.html" class="nav-link-item">Contact</a>
+    <div class="pt-2">
+      <a href="consultation.html" class="btn-primary-custom w-100 justify-content-center">
+        <i class="bi bi-calendar-check"></i> Book a Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= 2. CINEMATIC HERO SECTION ================= -->
+  <section class="hero-section">
+    <!-- Animated background wrapper for GSAP scale and parallax -->
+    <div class="hero-bg-container">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Luxury Real Estate" class="hero-bg-img" />
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container-site hero-content">
+      <div class="row">
+        <div class="col-lg-10 col-xl-9">
+          <!-- Small Eyebrow Badge -->
+          <div class="hero-eyebrow">
+            <i class="bi bi-shield-check text-primary"></i> YOUR TRUSTED REAL ESTATE PARTNER
+          </div>
+
+          <!-- Main Dominant Heading -->
+          <h1 class="hero-heading font-display">
+            <span class="hero-heading-line">Find the Right Property.</span>
+            <span class="hero-heading-line">Make the Right Investment.</span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="hero-subtext">
+            Discover exceptional properties and professional real estate solutions tailored to your goals across DHA Karachi, Clifton, and prime sectors.
+          </p>
+
+          <!-- Primary Action Buttons -->
+          <div class="hero-action-buttons">
+            <a href="properties.html" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-search"></i> Explore Properties
+            </a>
+            <a href="consultation.html" class="btn-navy-outline btn-lg-custom">
+              <i class="bi bi-calendar-week"></i> Book a Consultation
+            </a>
+          </div>
+
+          <!-- Secondary Contact Actions -->
+          <div class="hero-contact-actions">
+            <a href="tel:03003084176" class="btn-navy-outline py-2 px-3 text-sm">
+              <i class="bi bi-telephone-fill text-primary"></i> Call Now: 0300-3084176
+            </a>
+            <a href="https://wa.me/923003084176?text=Hello%20Hasaan%20Real%20Estate%2C%20I%20am%20interested%20in%20property%20consultation" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-2 px-3 text-sm">
+              <i class="bi bi-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+
+          <!-- Google Rating Box -->
+          <div class="hero-rating-box">
+            <div class="star-group">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+            <span class="rating-score">5.0 Google Rating</span>
+            <span class="rating-count">· 100+ Reviews on Google</span>
+          </div>
+
+          <!-- Hero Trust Stats -->
+          <div class="hero-stat-row">
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">12+</span>
+              <span class="hero-stat-label">Years Experience</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">850+</span>
+              <span class="hero-stat-label">Properties Sold</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">500+</span>
+              <span class="hero-stat-label">Happy Clients</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">100%</span>
+              <span class="hero-stat-label">Verified Listings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. FLOATING PROPERTY SEARCH BOX ================= -->
+  <div class="container-site floating-search-wrapper" id="hero-search-box">
+    <div class="search-box-card">
+      <!-- Tabs (Buy, Rent, Sell) -->
+      <div class="search-tabs-nav" role="tablist">
+        <button type="button" class="search-tab-btn active" data-purpose="Buy">
+          <i class="bi bi-cart-check me-1"></i> Buy
+        </button>
+        <button type="button" class="search-tab-btn" data-purpose="Rent">
+          <i class="bi bi-key me-1"></i> Rent
+        </button>
+        <button type="button" class="search-tab-btn" data-purpose="Sell">
+          <i class="bi bi-tag me-1"></i> Sell
+        </button>
+      </div>
+
+      <!-- Single Horizontal Row Search Form -->
+      <form id="hero-search-form" class="search-form-inner">
+        <div class="search-grid-layout">
+          <!-- Property Type -->
+          <div class="search-input-group">
+            <i class="bi bi-building input-icon"></i>
+            <select class="form-select" id="search-type" aria-label="Property Type">
+              <option value="All Types" selected>Property Type</option>
+              <option value="House">House / Villa</option>
+              <option value="Apartment">Apartment / Flat</option>
+              <option value="Plot">Residential Plot</option>
+              <option value="Commercial">Commercial Plaza</option>
+              <option value="Office">Corporate Office</option>
+            </select>
+          </div>
+
+          <!-- Location -->
+          <div class="search-input-group">
+            <i class="bi bi-geo-alt input-icon"></i>
+            <input type="text" class="form-control" id="search-location" placeholder="Location (e.g. DHA, Clifton)" />
+          </div>
+
+          <!-- Min Price -->
+          <div class="search-input-group">
+            <i class="bi bi-cash-stack input-icon"></i>
+            <input type="number" class="form-control" id="search-min-price" placeholder="Min Price (Rs)" />
+          </div>
+
+          <!-- Max Price -->
+          <div class="search-input-group">
+            <i class="bi bi-cash-coin input-icon"></i>
+            <input type="number" class="form-control" id="search-max-price" placeholder="Max Price (Rs)" />
+          </div>
+
+          <!-- Search Button -->
+          <div class="search-btn-col">
+            <button type="submit" class="btn-primary-custom w-100 py-2 justify-content-center">
+              <i class="bi bi-search"></i> Search Properties
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ================= 5. FEATURED PROPERTIES ================= -->
+  <section class="section-padding bg-white">
+    <div class="container-site">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4">
+        <div class="section-title-wrap mb-md-0">
+          <span class="section-badge">Handpicked Opportunities</span>
+          <h2 class="section-heading font-display">Featured Properties</h2>
+          <p class="section-subtext mb-0">Explore some of our latest residential and commercial opportunities.</p>
+        </div>
+        <a href="properties.html" class="btn-outline-custom mt-3 mt-md-0">
+          View All Properties <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <!-- Dynamic Grid Injected by properties.js -->
+      <div class="row g-4" id="featured-properties-container">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. SERVICES (4 FEATURED LARGE VISUAL BLOCKS) ================= -->
+  <section class="section-padding bg-alt" id="home-services-section">
+    <div class="container-site">
+      <div class="text-center section-title-wrap mx-auto mb-5" style="max-width: 680px;">
+        <span class="section-badge">Premium Advisory</span>
+        <h2 class="section-heading font-display">Real Estate Solutions Built Around You</h2>
+        <p class="section-subtext">Providing professional, transparent guidance across every facet of Karachi's premier property markets.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 01 PROPERTY BUYING -->
+        <div class="col-12 col-lg-6 service-card-item">
+          <div class="home-service-card">
+            <span class="home-service-num">01</span>
+            <div class="home-service-icon">
+              <i class="bi bi-houses"></i>
+            </div>
+            <span class="home-service-eyebrow">RESIDENTIAL & COMMERCIAL ACQUISITION</span>
+            <h3 class="home-service-title">PROPERTY BUYING</h3>
+            <p class="home-service-desc">
+              Find the right property with professional guidance from search to final decision. Curated shortlists across DHA and Clifton, verified documentation, and skilled price negotiation.
+            </p>
+            <a href="services.html#service-buying" class="home-service-btn">
+              Explore Service <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 02 PROPERTY SELLING -->
+        <div class="col-12 col-lg-6 service-card-item">
+          <div class="home-service-card">
+            <span class="home-service-num">02</span>
+            <div class="home-service-icon">
+              <i class="bi bi-tag"></i>
+            </div>
+            <span class="home-service-eyebrow">STRATEGIC ASSET MARKETING</span>
+            <h3 class="home-service-title">PROPERTY SELLING</h3>
+            <p class="home-service-desc">
+              Market your property professionally and connect with the right buyers. Targeted high-net-worth marketing, precise valuation benchmarks, and complete transaction privacy.
+            </p>
+            <a href="services.html#service-selling" class="home-service-btn">
+              Explore Service <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 03 PROPERTY INVESTMENT -->
+        <div class="col-12 col-lg-6 service-card-item">
+          <div class="home-service-card">
+            <span class="home-service-num">03</span>
+            <div class="home-service-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <span class="home-service-eyebrow">CAPITAL APPRECIATION & HIGH YIELD</span>
+            <h3 class="home-service-title">PROPERTY INVESTMENT</h3>
+            <p class="home-service-desc">
+              Make informed property investment decisions with expert market insights. Comprehensive ROI projections, rental yield analysis, and sustainable capital growth strategies.
+            </p>
+            <a href="services.html#service-investment" class="home-service-btn">
+              Explore Service <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 04 PROPERTY CONSULTATION -->
+        <div class="col-12 col-lg-6 service-card-item">
+          <div class="home-service-card">
+            <span class="home-service-num">04</span>
+            <div class="home-service-icon">
+              <i class="bi bi-chat-square-quote"></i>
+            </div>
+            <span class="home-service-eyebrow">PRIVATE ADVISORY SESSION</span>
+            <h3 class="home-service-title">PROPERTY CONSULTATION</h3>
+            <p class="home-service-desc">
+              Get personalized advice based on your real estate goals. Principal-led advisory on property valuation, tax planning, asset restructuring, and regulatory procedures.
+            </p>
+            <a href="consultation.html" class="home-service-btn">
+              Book Consultation <i class="bi bi-calendar-check"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. ABOUT US PREVIEW ================= -->
+  <section class="section-padding bg-white">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <!-- Left Image -->
+        <div class="col-lg-6">
+          <div class="about-preview-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000&q=80" alt="Hasaan Real Estate Office" class="w-100 rounded-4" />
+            <div class="floating-exp-badge">
+              <div class="number">10+</div>
+              <div class="small fw-semibold mt-1">Years of Dedicated Trust & Excellence</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content & Stats -->
+        <div class="col-lg-6">
+          <span class="section-badge">About Hasaan Real Estate</span>
+          <h2 class="section-heading font-display">A local real estate team built on integrity & expertise.</h2>
+          <p class="section-subtext">
+            Operating from the heart of DHA Phase 1 Karachi, Hasaan Real Estate provides honest, insightful, and client-centric property advisory. We cut through market speculation to deliver verified listings, solid valuations, and stress-free handovers.
+          </p>
+
+          <!-- Animated Stat Counters -->
+          <div class="stats-grid-row">
+            <div class="stat-item-box">
+              <div class="stat-number stat-counter" data-target="10" data-suffix="+">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item-box">
+              <div class="stat-number stat-counter" data-target="100" data-suffix="+">100+</div>
+              <div class="stat-label">Properties Closed</div>
+            </div>
+            <div class="stat-item-box">
+              <div class="stat-number stat-counter" data-target="500" data-suffix="+">500+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item-box">
+              <div class="stat-number stat-counter" data-target="20" data-suffix="+">20+</div>
+              <div class="stat-label">Major Projects Handled</div>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn-primary-custom">
+            Learn More About Us <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. WHY CHOOSE US ================= -->
+  <section class="section-padding bg-alt">
+    <div class="container-site">
+      <div class="text-center section-title-wrap mx-auto" style="max-width: 680px;">
+        <span class="section-badge">Our Commitment</span>
+        <h2 class="section-heading font-display">Why Choose Us?</h2>
+        <p class="section-subtext">Built on integrity, transparency, and deep market knowledge across Karachi's finest neighborhoods.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Feature 1: Expertise -->
+        <div class="col-12 col-md-6 col-lg-4 why-us-card-item">
+          <div class="feature-box">
+            <span class="feature-tag-badge">Core Strength</span>
+            <div class="feature-box-icon">
+              <i class="bi bi-compass"></i>
+            </div>
+            <h4>Professional Expertise</h4>
+            <p>Granular understanding of street-by-street pricing, future developments, and zoning regulations across DHA and Clifton.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Trust -->
+        <div class="col-12 col-md-6 col-lg-4 why-us-card-item">
+          <div class="feature-box">
+            <span class="feature-tag-badge">10+ Years Trust</span>
+            <div class="feature-box-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h4>Unwavering Trust</h4>
+            <p>Over a decade of ethical client advisory with verified title deeds, clear allotment records, and genuine owner verification.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3: Market Knowledge -->
+        <div class="col-12 col-md-6 col-lg-4 why-us-card-item">
+          <div class="feature-box">
+            <span class="feature-tag-badge">DHA Specialist</span>
+            <div class="feature-box-icon">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <h4>Market Knowledge</h4>
+            <p>Deep familiarity with local trends, infrastructure expansions, and realistic transaction metrics rather than speculative hype.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4: Transparency -->
+        <div class="col-12 col-md-6 col-lg-4 why-us-card-item">
+          <div class="feature-box">
+            <span class="feature-tag-badge">0% Hidden Fees</span>
+            <div class="feature-box-icon">
+              <i class="bi bi-file-text"></i>
+            </div>
+            <h4>Transparent Process</h4>
+            <p>Zero hidden charges, comprehensive breakdown of taxes and transfer charges, and strict compliance with DHA rules.</p>
+          </div>
+        </div>
+
+        <!-- Feature 5: Personalized Service -->
+        <div class="col-12 col-md-6 col-lg-4 why-us-card-item">
+          <div class="feature-box">
+            <span class="feature-tag-badge">Direct Advisory</span>
+            <div class="feature-box-icon">
+              <i class="bi bi-person-check"></i>
+            </div>
+            <h4>Personalized Service</h4>
+            <p>Direct attention from our principal advisor to tailor search parameters to your lifestyle and wealth preservation goals.</p>
+          </div>
+        </div>
+
+        <!-- Feature 6: Client Satisfaction -->
+        <div class="col-12 col-md-6 col-lg-4 why-us-card-item">
+          <div class="feature-box">
+            <span class="feature-tag-badge">5.0 ★ Rating</span>
+            <div class="feature-box-icon">
+              <i class="bi bi-hand-thumbs-up"></i>
+            </div>
+            <h4>Client Satisfaction</h4>
+            <p>Long-term relationships that extend well beyond the deal signing, from tenant placement to ongoing management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. TESTIMONIALS ================= -->
+  <section class="section-padding bg-white" id="testimonials-section">
+    <div class="container-site">
+      <div class="text-center section-title-wrap mx-auto" style="max-width: 680px;">
+        <span class="section-badge">Client Trust</span>
+        <h2 class="section-heading font-display">What Our Clients Say</h2>
+        <p class="section-subtext">Hear from families, overseas Pakistanis, and corporate investors who trusted Hasaan Real Estate with their key property decisions.</p>
+      </div>
+
+      <div class="testimonials-carousel" id="testimonials-carousel" aria-roledescription="carousel" aria-label="Client testimonials">
+        <button type="button" class="tc-arrow tc-prev" aria-label="Previous testimonials">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <div class="tc-viewport">
+          <div class="tc-track" id="testimonials-container">
+            <!-- Testimonial 1 -->
+            <div class="tc-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Hasaan Real Estate helped me find the perfect home in DHA Phase 6. The process was transparent and smooth from start to finish."
+                </p>
+                <div class="testimonial-author-wrap">
+                  <div class="testimonial-avatar-initial">AS</div>
+                  <div>
+                    <div class="testimonial-author-name">A. Siddiqui</div>
+                    <div class="testimonial-author-loc">Home Buyer · DHA Phase 6</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="tc-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Sold my commercial plot within 2 weeks at a great market price. Highly professional team with swift legal documentation."
+                </p>
+                <div class="testimonial-author-wrap">
+                  <div class="testimonial-avatar-initial">MF</div>
+                  <div>
+                    <div class="testimonial-author-name">M. Farooq</div>
+                    <div class="testimonial-author-loc">Commercial Seller · Bukhari Commercial</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="tc-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Best property consultants in Karachi. Transparent dealings, zero hidden charges, and honest guidance on DHA market values."
+                </p>
+                <div class="testimonial-author-wrap">
+                  <div class="testimonial-avatar-initial">SK</div>
+                  <div>
+                    <div class="testimonial-author-name">S. Khan</div>
+                    <div class="testimonial-author-loc">Property Investor · Clifton Block 4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="tc-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Fahad hasaan gave exceptional guidance on my overseas property investment. Remote paperwork and transfer were flawless."
+                </p>
+                <div class="testimonial-author-wrap">
+                  <div class="testimonial-avatar-initial">RA</div>
+                  <div>
+                    <div class="testimonial-author-name">R. Ahmed</div>
+                    <div class="testimonial-author-loc">Overseas Client · UK / DHA Phase 8</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="tc-arrow tc-next" aria-label="Next testimonials">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+
+        <div class="tc-dots" id="tc-dots" role="tablist" aria-label="Choose testimonial"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. GOOGLE RATING STRIP ================= -->
+  <section class="google-rating-strip google-rating-strip-v4" id="google-rating-strip">
+    <div class="container-site">
+      <div class="google-reviews-card">
+        <div class="google-reviews-top">
+          <span class="google-logo">
+            <svg viewBox="0 0 48 48" width="24" height="24" aria-hidden="true">
+              <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.4 29.3 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.4 1.1 7.3 2.8l5.7-5.7C34.1 6.4 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20c11 0 20-9 20-20 0-1.3-.1-2.3-.4-3.5z"/>
+              <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.4 15.2 18.8 12.5 24 12.5c2.8 0 5.4 1.1 7.3 2.8l5.7-5.7C34.1 6.4 29.3 4 24 4 16.3 4 9.7 8.4 6.3 14.7z"/>
+              <path fill="#4CAF50" d="M24 44c5.2 0 10-2 13.6-5.2l-6.3-5.3C29.2 35 26.7 36 24 36c-5.3 0-9.7-2.6-11.4-6.7l-6.6 5.1C9.5 39.6 16.3 44 24 44z"/>
+              <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-1 3-3.4 5-6.3 6.4l6.3 5.3C39 36.5 44 31 44 24c0-1.3-.1-2.3-.4-3.5z"/>
+            </svg>
+          </span>
+          <div>
+            <strong class="google-logo-text">Google Reviews</strong>
+            <span class="google-verified"><i class="bi bi-patch-check-fill"></i> Verified Business Profile</span>
+          </div>
+        </div>
+
+        <div class="google-score-wrap">
+          <span class="google-score">5.0</span>
+          <div class="google-stars" aria-label="Rated 5 out of 5">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          </div>
+          <span class="google-review-count">Based on 100+ Google reviews</span>
+        </div>
+
+        <p class="google-trust-line">
+          <i class="bi bi-quote"></i> Trusted by property buyers, sellers and investors across Karachi.
+        </p>
+
+        <div class="google-actions">
+          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-navy-outline py-2 px-4 text-sm">
+            <i class="bi bi-box-arrow-up-right me-1"></i> Read Reviews
+          </a>
+          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-google-review py-2 px-4 text-sm">
+            <i class="bi bi-pencil me-1"></i> Write a Review
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10a. FIND YOUR PROPERTY (CATEGORY GRID) ================= -->
+  <section class="section-padding category-section">
+    <div class="container-site">
+      <div class="section-title-wrap text-center mx-auto" style="max-width: 720px;">
+        <span class="section-badge">Explore Categories</span>
+        <h2 class="section-heading">Find Your Property</h2>
+        <p class="section-subtext mb-0">Browse by category to narrow down what you're looking for.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Houses -->
+        <div class="category-grid-item col-sm-6 col-lg-4">
+          <a href="properties.html?purpose=Buy&type=House" class="category-grid-card" aria-label="Browse houses">
+            <div class="category-img-wrap">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80" alt="Houses for sale in Karachi" loading="lazy" />
+              <div class="category-overlay"></div>
+              <h3 class="category-card-title">Houses</h3>
+              <span class="category-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+            <div class="category-card-body">
+              <p class="category-card-desc">Find comfortable houses in Karachi's established and emerging communities.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Apartments -->
+        <div class="category-grid-item col-sm-6 col-lg-4">
+          <a href="properties.html?purpose=Buy&type=Apartment" class="category-grid-card" aria-label="Browse apartments">
+            <div class="category-img-wrap">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80" alt="Apartments for sale in Karachi" loading="lazy" />
+              <div class="category-overlay"></div>
+              <h3 class="category-card-title">Apartments</h3>
+              <span class="category-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+            <div class="category-card-body">
+              <p class="category-card-desc">Explore apartments ranging from modern residences to family-friendly homes.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Plots -->
+        <div class="category-grid-item col-sm-6 col-lg-4">
+          <a href="properties.html?purpose=Buy&type=Plot" class="category-grid-card" aria-label="Browse plots">
+            <div class="category-img-wrap">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=900&q=80" alt="Residential plots for sale in Karachi" loading="lazy" />
+              <div class="category-overlay"></div>
+              <h3 class="category-card-title">Plots</h3>
+              <span class="category-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+            <div class="category-card-body">
+              <p class="category-card-desc">Discover residential and investment plots in promising locations.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Commercial -->
+        <div class="category-grid-item col-sm-6 col-lg-4">
+          <a href="properties.html?purpose=Buy&type=Commercial" class="category-grid-card" aria-label="Browse commercial properties">
+            <div class="category-img-wrap">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="Commercial properties in Karachi" loading="lazy" />
+              <div class="category-overlay"></div>
+              <h3 class="category-card-title">Commercial</h3>
+              <span class="category-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+            <div class="category-card-body">
+              <p class="category-card-desc">Find commercial properties suitable for businesses, shops and investment.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Offices -->
+        <div class="category-grid-item col-sm-6 col-lg-4">
+          <a href="properties.html?purpose=Buy&type=Office" class="category-grid-card" aria-label="Browse offices">
+            <div class="category-img-wrap">
+              <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=900&q=80" alt="Office spaces in Karachi" loading="lazy" />
+              <div class="category-overlay"></div>
+              <h3 class="category-card-title">Offices</h3>
+              <span class="category-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+            <div class="category-card-body">
+              <p class="category-card-desc">Explore professional office spaces for businesses of different sizes.</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Rentals -->
+        <div class="category-grid-item col-sm-6 col-lg-4">
+          <a href="properties.html?purpose=Rent" class="category-grid-card" aria-label="Browse rental properties">
+            <div class="category-img-wrap">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=900&q=80" alt="Rental properties in Karachi" loading="lazy" />
+              <div class="category-overlay"></div>
+              <h3 class="category-card-title">Rentals</h3>
+              <span class="category-arrow"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+            <div class="category-card-body">
+              <p class="category-card-desc">Browse rental properties for comfortable and convenient living.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10b. REAL ESTATE GUIDANCE YOU CAN TRUST ================= -->
+  <section class="section-padding guidance-section">
+    <div class="container-site">
+      <div class="section-title-wrap text-center mx-auto" style="max-width: 720px;">
+        <span class="section-badge">Why Choose Us</span>
+        <h2 class="section-heading">Real Estate Guidance You Can Trust</h2>
+        <p class="section-subtext mb-0">Experienced, transparent support at every step of your property journey.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="guidance-item col-sm-6 col-lg-4">
+          <div class="guidance-card">
+            <div class="guidance-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h3 class="guidance-title">Local Market Expertise</h3>
+            <p class="guidance-desc">Deep knowledge of DHA, Clifton and Karachi's major property markets.</p>
+          </div>
+        </div>
+        <div class="guidance-item col-sm-6 col-lg-4">
+          <div class="guidance-card">
+            <div class="guidance-icon"><i class="bi bi-patch-check-fill"></i></div>
+            <h3 class="guidance-title">Verified Opportunities</h3>
+            <p class="guidance-desc">Focus on genuine property opportunities and transparent information.</p>
+          </div>
+        </div>
+        <div class="guidance-item col-sm-6 col-lg-4">
+          <div class="guidance-card">
+            <div class="guidance-icon"><i class="bi bi-people-fill"></i></div>
+            <h3 class="guidance-title">Professional Guidance</h3>
+            <p class="guidance-desc">Personal support throughout buying, selling and renting.</p>
+          </div>
+        </div>
+        <div class="guidance-item col-sm-6 col-lg-4">
+          <div class="guidance-card">
+            <div class="guidance-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+            <h3 class="guidance-title">Documentation Support</h3>
+            <p class="guidance-desc">Assistance with property transfer and documentation processes.</p>
+          </div>
+        </div>
+        <div class="guidance-item col-sm-6 col-lg-4">
+          <div class="guidance-card">
+            <div class="guidance-icon"><i class="bi bi-globe-americas"></i></div>
+            <h3 class="guidance-title">Overseas Client Support</h3>
+            <p class="guidance-desc">Helping overseas clients manage property requirements remotely.</p>
+          </div>
+        </div>
+        <div class="guidance-item col-sm-6 col-lg-4">
+          <div class="guidance-card">
+            <div class="guidance-icon"><i class="bi bi-chat-heart-fill"></i></div>
+            <h3 class="guidance-title">Personalized Service</h3>
+            <p class="guidance-desc">Every client receives direct and professional attention.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10c. SERVING KARACHI'S PRIME LOCATIONS ================= -->
+  <section class="section-padding locations-section">
+    <div class="container-site">
+      <div class="section-title-wrap text-center mx-auto" style="max-width: 720px;">
+        <span class="section-badge">Our Coverage</span>
+        <h2 class="section-heading">Serving Karachi's Prime Locations</h2>
+        <p class="section-subtext mb-0">Focused expertise across the city's most established and fastest-growing areas.</p>
+      </div>
+
+      <div class="row g-4 g-lg-5 align-items-stretch">
+        <div class="col-lg-7">
+          <div class="row g-3 row-cols-1 row-cols-sm-2 h-100">
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">DHA Karachi</h3>
+                  <p class="location-desc">Karachi's most established upscale residential and commercial hub.</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">Clifton</h3>
+                  <p class="location-desc">Sea-facing apartments and prime commercial addresses.</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">Bahria Town</h3>
+                  <p class="location-desc">Gated communities with planned infrastructure and modern living.</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">PECHS</h3>
+                  <p class="location-desc">Centrally located, established residential blocks and commercial areas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">Gulshan-e-Iqbal</h3>
+                  <p class="location-desc">Well-connected residential neighborhoods near major roads and amenities.</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">Gulistan-e-Jauhar</h3>
+                  <p class="location-desc">Growing residential sector with a wide range of property options.</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">North Nazimabad</h3>
+                  <p class="location-desc">Established residential area with a strong resale market.</p>
+                </div>
+              </div>
+            </div>
+            <div class="location-item col">
+              <div class="location-card">
+                <span class="location-pin"><i class="bi bi-geo-alt-fill"></i></span>
+                <div>
+                  <h3 class="location-title">Other Karachi Areas</h3>
+                  <p class="location-desc">Additional neighborhoods available on request.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="locations-visual-item col-lg-5">
+          <div class="locations-visual-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115867.7667232356!2d67.01625906803274!3d24.83444458514578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c5e8c156f05%3A0xbcf2f68595d2c7e0!2sDefence%20Housing%20Authority%2C%20Karachi!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Karachi Prime Locations Map" aria-label="Map of DHA and prime Karachi locations"></iframe>
+            <span class="locations-visual-badge">
+              <i class="bi bi-geo-alt-fill"></i> DHA · Clifton &amp; Prime Karachi Sectors
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9b. CONSULTATION PREVIEW ================= -->
+  <section class="section-padding consult-preview-section">
+    <div class="container-site">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 consult-preview-media">
+          <div class="consult-preview-frame">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&q=80" alt="Senior real estate consultation in Karachi" loading="lazy" />
+            <div class="consult-preview-float-card">
+              <div class="consult-float-icon"><i class="bi bi-calendar2-check"></i></div>
+              <div>
+                <strong class="d-block text-navy font-display">1-on-1 Strategy Session</strong>
+                <span class="small text-secondary-custom">Confidential &middot; No obligation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 consult-preview-body">
+          <span class="service-intro-badge mb-3 d-inline-flex">Free Consultation</span>
+          <h2 class="section-heading font-display mb-3">Book a Confidential Property Consultation</h2>
+          <p class="section-subtext mb-4">
+            Speak directly with senior advisors about buying, selling, renting, or investing. Get street-level pricing insight, regulatory guidance, and a clear roadmap before you commit capital.
+          </p>
+          <ul class="consult-preview-list">
+            <li><i class="bi bi-check-circle-fill"></i> Street-level DHA &amp; Clifton market pricing</li>
+            <li><i class="bi bi-check-circle-fill"></i> Transparent, fully confidential guidance</li>
+            <li><i class="bi bi-check-circle-fill"></i> Tailored buy / sell / invest roadmap</li>
+            <li><i class="bi bi-check-circle-fill"></i> Verified documentation &amp; transfer support</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="consultation.html" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-calendar-week"></i> Schedule an Appointment
+            </a>
+            <a href="https://wa.me/923003084176?text=Hello%20Hasaan%20Real%20Estate%2C%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer" class="btn-whatsapp btn-lg-custom">
+              <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. CALL TO ACTION ================= -->
+  <section class="cta-banner-section">
+    <div class="container-site position-relative z-2">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8 cta-banner-content">
+          <span class="section-badge badge-white">Take the Next Step</span>
+          <h2 class="section-heading text-white font-display mb-3">
+            Ready to Make Your Next Real Estate Move?
+          </h2>
+          <p class="section-subtext text-light mb-4" style="color: #E9DFD1 !important;">
+            Whether you are buying your dream residence, divesting commercial property, or looking for structured investment guidance, our senior advisors are ready to assist.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="properties.html" class="btn-primary-custom btn-lg-custom">
+              <i class="bi bi-houses"></i> Explore Properties
+            </a>
+            <a href="consultation.html" class="btn-navy-outline btn-lg-custom">
+              <i class="bi bi-calendar-check"></i> Book a Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-site">
+      <div class="row g-5">
+        <!-- Col 1: Brand Info -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img footer-brand-logo" />
+          <p class="small text-secondary-custom mb-3" style="color: #C4B7A4 !important;">
+            <strong>Proprietor:</strong> Fahad hasaan
+          </p>
+          <p class="small leading-relaxed" style="color: #C4B7A4;">
+            A premier Karachi-based real estate consultancy helping clients buy, sell, rent, and invest with complete confidence across DHA, Clifton, Bahria Town, and other prime sectors.
+          </p>
+          <div class="footer-social-links mt-4">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/923003084176" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-primary"></i> Home</a></li>
+            <li><a href="properties.html"><i class="bi bi-chevron-right small text-primary"></i> Properties</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small text-primary"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-primary"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-primary"></i> Contact</a></li>
+            <li><a href="consultation.html"><i class="bi bi-chevron-right small text-primary"></i> Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Properties -->
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Properties</h4>
+          <ul class="footer-links-list">
+            <li><a href="properties.html?type=House"><i class="bi bi-chevron-right small text-primary"></i> Houses</a></li>
+            <li><a href="properties.html?type=Apartment"><i class="bi bi-chevron-right small text-primary"></i> Apartments</a></li>
+            <li><a href="properties.html?type=Plot"><i class="bi bi-chevron-right small text-primary"></i> Plots</a></li>
+            <li><a href="properties.html?type=Commercial"><i class="bi bi-chevron-right small text-primary"></i> Commercial</a></li>
+            <li><a href="properties.html?purpose=Buy"><i class="bi bi-chevron-right small text-primary"></i> For Sale</a></li>
+            <li><a href="properties.html?purpose=Rent"><i class="bi bi-chevron-right small text-primary"></i> For Rent</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Contact Information</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <strong class="text-white d-block">Office Address</strong>
+              Shop# SF-2 Tooba Apartment, DHA Phase I Garden, Karachi, Pakistan
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <strong class="text-white d-block">Phone Support</strong>
+              <a href="tel:03003084176" class="text-light">0300-3084176</a> / <a href="tel:03333477745" class="text-light">0333-3477745</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <strong class="text-white d-block">Email</strong>
+              <a href="mailto:fahadjunejo7@gmail.com" class="text-light">fahadjunejo7@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-clock"></i></div>
+            <div>
+              <strong class="text-white d-block">Working Hours</strong>
+              Monday – Saturday, 10:00 AM – 7:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Rating Bar -->
+      <div class="footer-google-rating">
+        <div class="fg-left">
+          <span class="google-logo">
+            <svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true">
+              <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.4 29.3 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.4 1.1 7.3 2.8l5.7-5.7C34.1 6.4 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20c11 0 20-9 20-20 0-1.3-.1-2.3-.4-3.5z"/>
+              <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.4 15.2 18.8 12.5 24 12.5c2.8 0 5.4 1.1 7.3 2.8l5.7-5.7C34.1 6.4 29.3 4 24 4 16.3 4 9.7 8.4 6.3 14.7z"/>
+              <path fill="#4CAF50" d="M24 44c5.2 0 10-2 13.6-5.2l-6.3-5.3C29.2 35 26.7 36 24 36c-5.3 0-9.7-2.6-11.4-6.7l-6.6 5.1C9.5 39.6 16.3 44 24 44z"/>
+              <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-1 3-3.4 5-6.3 6.4l6.3 5.3C39 36.5 44 31 44 24c0-1.3-.1-2.3-.4-3.5z"/>
+            </svg>
+          </span>
+          <div class="fg-score">5.0</div>
+          <div class="fg-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <div class="fg-meta">Rated Excellent on Google — 100+ verified reviews</div>
+        </div>
+        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-box-arrow-up-right"></i> Review Us on Google
+        </a>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          © 2026 Hasaan Real Estate. All Rights Reserved.
+        </div>
+        <div class="d-flex gap-4">
+          <a href="about.html" class="text-secondary small">Privacy Policy</a>
+          <a href="about.html" class="text-secondary small">Terms of Service</a>
+          <a href="contact.html" class="text-secondary small">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- Application JS -->
+  <script src="js/properties.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -331,6 +331,22 @@ const propertiesData = [
   }
 ];
 
+// Curated video tours shown in the details page gallery
+const propertyVideoTours = {
+  "dha-7-modern-villa": "https://videos.pexels.com/video-files/7578024/7578024-hd_1920_1080_30fps.mp4",
+  "clifton-sea-facing-apartment": "https://videos.pexels.com/video-files/7578011/7578011-hd_1920_1080_30fps.mp4",
+  "dha-6-commercial-shop": "https://videos.pexels.com/video-files/7578014/7578014-hd_1920_1080_30fps.mp4",
+  "dha-8-residential-plot": "https://videos.pexels.com/video-files/7577726/7577726-hd_1920_1080_30fps.mp4",
+  "dha-6-bungalow-rent": "https://videos.pexels.com/video-files/7577934/7577934-hd_1920_1080_30fps.mp4",
+  "clifton-furnished-penthouse": "https://videos.pexels.com/video-files/7578113/7578113-hd_1920_1080_30fps.mp4",
+  "bahria-town-corner-house": "https://videos.pexels.com/video-files/7577936/7577936-hd_1920_1080_30fps.mp4",
+  "pechs-furnished-office": "https://videos.pexels.com/video-files/7578012/7578012-hd_1920_1080_30fps.mp4",
+  "dha-5-luxury-residence": "https://videos.pexels.com/video-files/7687709/7687709-hd_1920_1080_30fps.mp4",
+  "emaar-crescent-seaview": "https://videos.pexels.com/video-files/7578114/7578114-hd_1920_1080_30fps.mp4"
+};
+
+propertiesData.forEach(p => { p.video = propertyVideoTours[p.id] || ""; });
+
 // Helper to get property by id
 function getPropertyById(id) {
   return propertiesData.find(item => item.id === id) || propertiesData[0];
@@ -371,7 +387,7 @@ function createPropertyCardHTML(property) {
   return `
     <div class="col-lg-4 col-md-6 mb-4 property-grid-item" data-id="${property.id}">
       <article class="property-card">
-        <div class="property-img-wrap">
+        <a class="property-img-wrap" href="property-details.html?id=${property.id}" aria-label="View details for ${property.title}">
           <img src="${property.images[0]}" alt="${property.title}" loading="lazy" />
           <div class="badge-tag-wrap">
             <span class="prop-badge ${badgeClass}">${badgeLabel}</span>
@@ -380,7 +396,7 @@ function createPropertyCardHTML(property) {
           <div class="property-price-floating">
             ${property.priceLabel}
           </div>
-        </div>
+        </a>
         <div class="property-body">
           <div class="property-type-label">${property.type}</div>
           <h3 class="property-title">
@@ -659,25 +675,82 @@ function initPropertyDetailsPage() {
   if (typeBadgeEl) typeBadgeEl.textContent = property.type;
 
   // Gallery
+  const mainMediaEl = document.getElementById('gallery-main-media');
   const mainImageEl = document.getElementById('gallery-main-image');
   const thumbContainer = document.getElementById('gallery-thumbs-row');
+  let mainVideoEl = null;
+
+  const showGalleryImage = (src) => {
+    if (mainVideoEl) {
+      mainVideoEl.pause();
+      mainVideoEl.remove();
+      mainVideoEl = null;
+    }
+    if (mainImageEl) {
+      if (src) mainImageEl.src = src;
+      mainImageEl.style.display = '';
+    }
+  };
+
+  const showGalleryVideo = (src) => {
+    if (!mainMediaEl || !src) return;
+    if (mainImageEl) mainImageEl.style.display = 'none';
+    if (mainVideoEl) {
+      mainVideoEl.pause();
+      mainVideoEl.remove();
+      mainVideoEl = null;
+    }
+    mainVideoEl = document.createElement('video');
+    mainVideoEl.className = 'gallery-main-video';
+    mainVideoEl.src = src;
+    mainVideoEl.controls = true;
+    mainVideoEl.autoplay = true;
+    mainVideoEl.muted = true;
+    mainVideoEl.loop = true;
+    mainVideoEl.playsInline = true;
+    mainVideoEl.setAttribute('playsinline', '');
+    mainMediaEl.appendChild(mainVideoEl);
+    const playPromise = mainVideoEl.play();
+    if (playPromise && playPromise.catch) playPromise.catch(() => {});
+  };
+
   if (mainImageEl && property.images.length > 0) {
     mainImageEl.src = property.images[0];
     mainImageEl.alt = property.title;
   }
 
   if (thumbContainer && property.images.length > 0) {
-    thumbContainer.innerHTML = property.images.map((img, idx) => `
+    const videoThumbHTML = property.video ? `
+      <button type="button" class="gallery-thumb-video" data-video="${property.video}" aria-label="Play video tour of ${property.title}">
+        <img src="${property.images[0]}" alt="${property.title} video tour" />
+        <span class="gallery-thumb-play"><i class="bi bi-play-fill"></i></span>
+        <span class="gallery-thumb-tag">Video</span>
+      </button>
+    ` : '';
+
+    const imageThumbsHTML = property.images.map((img, idx) => `
       <img src="${img}" alt="${property.title} thumbnail ${idx + 1}" class="gallery-thumb ${idx === 0 ? 'active' : ''}" data-index="${idx}" />
     `).join('');
 
+    thumbContainer.innerHTML = videoThumbHTML + imageThumbsHTML;
+
+    const videoThumb = thumbContainer.querySelector('.gallery-thumb-video');
     const thumbs = thumbContainer.querySelectorAll('.gallery-thumb');
+
+    if (videoThumb) {
+      videoThumb.addEventListener('click', () => {
+        thumbs.forEach(t => t.classList.remove('active'));
+        videoThumb.classList.add('active');
+        showGalleryVideo(videoThumb.getAttribute('data-video'));
+      });
+    }
+
     thumbs.forEach(thumb => {
       thumb.addEventListener('click', () => {
+        if (videoThumb) videoThumb.classList.remove('active');
         thumbs.forEach(t => t.classList.remove('active'));
         thumb.classList.add('active');
-        const idx = thumb.getAttribute('data-index');
-        mainImageEl.src = property.images[idx];
+        showGalleryImage(property.images[thumb.getAttribute('data-index')]);
       });
     });
   }

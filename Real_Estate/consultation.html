@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Consultation | Hasaan Real Estate</title>
+  <meta name="description" content="Schedule a confidential 1-on-1 real estate consultation with senior property advisors in DHA Karachi and Clifton." />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');
+  (function () {
+    'use strict';
+    var S = ['.section-title-wrap','.service-card-item','.why-us-card-item','.testimonial-col','.approach-step-card','.home-service-card','.property-grid-item','.service-visual-col','.service-content-col','.about-preview-img-wrap','.cta-banner-content','.google-strip-flex','.premium-form-card','.feature-box','.stat-item-box','.contact-info-card','.consult-preview-media','.consult-preview-body','.service-stat-item','.service-intro-band','.category-grid-item','.guidance-item','.location-item','.locations-visual-item','[data-reveal]'];
+    function patrol() {
+      var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+      var nodes = document.querySelectorAll(S.join(','));
+      for (var i = 0; i < nodes.length; i++) {
+        if (nodes[i].getBoundingClientRect().top <= vh - 30) nodes[i].classList.add('revealed');
+      }
+    }
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () { patrol(); ticking = false; });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', patrol, { passive: true });
+    window.addEventListener('load', patrol, { passive: true });
+    if (document.readyState !== 'loading') patrol();
+    else document.addEventListener('DOMContentLoaded', patrol);
+    setInterval(patrol, 1300);
+    window.RevealEngine = { patrol: patrol };
+    window.revealScan = patrol;
+  })();</script>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="apple-touch-icon" href="images/logo.jpeg" />
+</head>
+<body>
+
+  <!-- ================= 1. REDESIGNED BALANCED NAVBAR ================= -->
+  <header class="site-navbar">
+    <div class="container-site">
+      <div class="navbar-balanced-grid">
+        <!-- LEFT: Brand Logo -->
+        <a href="index.html" class="navbar-brand-wrap">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img" />
+        </a>
+
+        <!-- CENTER: Perfectly Centered Navigation Links -->
+        <nav class="navbar-center-menu" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link-item">Home</a>
+          <a href="properties.html" class="nav-link-item">Properties</a>
+          <a href="services.html" class="nav-link-item">Services</a>
+          <a href="about.html" class="nav-link-item">About Us</a>
+          <a href="contact.html" class="nav-link-item">Contact</a>
+        </nav>
+
+        <!-- RIGHT: Prominent CTA Button -->
+        <div class="navbar-right-action">
+          <a href="consultation.html" class="btn-primary-custom active">
+            <i class="bi bi-calendar-check"></i> Book a Consultation
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-nav-toggle" type="button" aria-label="Toggle Navigation Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="index.html" class="nav-link-item">Home</a>
+    <a href="properties.html" class="nav-link-item">Properties</a>
+    <a href="services.html" class="nav-link-item">Services</a>
+    <a href="about.html" class="nav-link-item">About Us</a>
+    <a href="contact.html" class="nav-link-item">Contact</a>
+    <div class="pt-2">
+      <a href="consultation.html" class="btn-primary-custom w-100 justify-content-center">
+        <i class="bi bi-calendar-check"></i> Book a Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= INNER PAGE HERO ================= -->
+  <section class="inner-page-hero">
+    <div class="container-site position-relative z-2">
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="active">Consultation</span>
+      </div>
+      <h1 class="inner-hero-title font-display">Let's Discuss Your Real Estate Goals</h1>
+      <p class="inner-hero-subtitle">
+        Schedule a dedicated 1-on-1 strategy session with our senior advisors. Transparent advice, verified market comparables, and zero pressure.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CONSULTATION MAIN SECTION ================= -->
+  <section class="section-padding bg-alt">
+    <div class="container-site">
+      <div class="row g-5">
+
+        <!-- LEFT COLUMN: What You Get & Advisor Card -->
+        <div class="col-lg-5">
+          <span class="section-badge">Private Advisory</span>
+          <h2 class="section-heading font-display">Why Book a Dedicated Session?</h2>
+          <p class="text-secondary-custom leading-relaxed mb-4">
+            Navigating property in Karachi involves nuanced street-level dynamics, regulatory procedures, and valuation subtleties. Our consultations provide complete clarity before you commit capital.
+          </p>
+
+          <div class="mb-4">
+            <!-- Benefit 1 -->
+            <div class="consultation-benefit-item">
+              <div class="benefit-icon-circle">
+                <i class="bi bi-clock-history"></i>
+              </div>
+              <div>
+                <h6 class="text-navy mb-1">30-Minute Confidential Session</h6>
+                <p class="small text-secondary-custom mb-0">Held in person at our DHA Phase 1 office or via Google Meet / WhatsApp Video for overseas clients.</p>
+              </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="consultation-benefit-item">
+              <div class="benefit-icon-circle">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div>
+                <h6 class="text-navy mb-1">Realistic Valuation Breakdown</h6>
+                <p class="small text-secondary-custom mb-0">We review true historical sales figures rather than inflated advertised prices to determine genuine market values.</p>
+              </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="consultation-benefit-item">
+              <div class="benefit-icon-circle">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div>
+                <h6 class="text-navy mb-1">DHA Legal & Tax Guidance</h6>
+                <p class="small text-secondary-custom mb-0">Clear breakdown of CVT, FBR taxes, Cantonment transfer fees, and essential title due diligence checklists.</p>
+              </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="consultation-benefit-item">
+              <div class="benefit-icon-circle">
+                <i class="bi bi-gem"></i>
+              </div>
+              <div>
+                <h6 class="text-navy mb-1">Off-Market Inventory Access</h6>
+                <p class="small text-secondary-custom mb-0">Discover private listings held by confidential sellers not publicly advertised on general portals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advisor Badge -->
+          <div class="p-3 bg-white rounded-3 border border-custom shadow-sm d-flex align-items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80" alt="Fahad hasaan" class="rounded-circle" style="width: 56px; height: 56px; object-fit: cover;" />
+            <div>
+              <strong class="d-block text-navy">Fahad hasaan</strong>
+              <span class="text-primary-custom small fw-semibold">Principal Advisor & Proprietor</span>
+              <div class="small text-muted"><i class="bi bi-star-fill text-warning"></i> 5.0 Google Rating · 10+ Years Trust</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Premium Booking Form & Confirmation Card -->
+        <div class="col-lg-7">
+          <div class="premium-form-card position-relative">
+
+            <!-- Success Confirmation State (Hidden initially) -->
+            <div id="consultation-success-card" class="success-banner-box">
+              <div class="icon"><i class="bi bi-calendar-check-fill"></i></div>
+              <h3 class="font-display text-navy mb-2">Consultation Booked Successfully!</h3>
+              <p class="text-secondary-custom small mb-4">
+                We have received your appointment request. Our coordinator will contact you shortly to confirm the appointment calendar slot.
+              </p>
+
+              <!-- Scheduled Summary Details -->
+              <div class="bg-white p-3 rounded-3 border border-custom mb-4" id="booking-summary-details">
+                <!-- Injected via consultation.js -->
+              </div>
+
+              <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+                <a id="consultation-whatsapp-confirm" href="https://wa.me/923003084176" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-2 px-3 small">
+                  <i class="bi bi-whatsapp"></i> Confirm via WhatsApp
+                </a>
+                <a href="index.html" class="btn-outline-custom py-2 px-3 small">
+                  Back to Homepage
+                </a>
+              </div>
+            </div>
+
+            <!-- Booking Form -->
+            <form id="consultation-booking-form" novalidate>
+              <h3 class="font-display h4 text-navy mb-1">Book Your Strategy Session</h3>
+              <p class="text-secondary-custom small mb-4">Please fill in your details and select your preferred meeting date and time slot.</p>
+
+              <div class="row g-3">
+                <!-- Full Name -->
+                <div class="col-md-6">
+                  <label class="form-label-custom">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" name="fullName" class="form-control form-control-custom" placeholder="e.g. Tariq Mehmood" required />
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="form-label-custom">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" name="email" class="form-control form-control-custom" placeholder="e.g. tariq@domain.com" required />
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                  <label class="form-label-custom">Phone / WhatsApp <span class="text-danger">*</span></label>
+                  <input type="tel" name="phone" class="form-control form-control-custom" placeholder="e.g. 0300-1234567" required />
+                </div>
+
+                <!-- Interested In -->
+                <div class="col-md-6">
+                  <label class="form-label-custom">Interested In <span class="text-danger">*</span></label>
+                  <select name="interest" class="form-select form-select-custom" required>
+                    <option value="" disabled selected>Select an Area of Interest</option>
+                    <option value="Buying Property">Buying Property (House, Apartment, Plot)</option>
+                    <option value="Selling Property">Selling Property</option>
+                    <option value="Renting Property">Renting Property</option>
+                    <option value="Investment">Commercial & High-Yield Investment</option>
+                    <option value="Property Consultation">Property Valuation & Advisory</option>
+                    <option value="Other">Overseas Client Representation / Other</option>
+                  </select>
+                </div>
+
+                <!-- Preferred Date -->
+                <div class="col-md-6">
+                  <label class="form-label-custom">Preferred Date <span class="text-danger">*</span></label>
+                  <input type="date" id="consult-date" name="date" class="form-control form-control-custom" required />
+                </div>
+
+                <!-- Preferred Time -->
+                <div class="col-md-6">
+                  <label class="form-label-custom">Preferred Time Slot <span class="text-danger">*</span></label>
+                  <select name="time" class="form-select form-select-custom" required>
+                    <option value="" disabled selected>Choose Time Slot</option>
+                    <option value="Morning (10:00 AM - 1:00 PM)">Morning (10:00 AM – 1:00 PM)</option>
+                    <option value="Afternoon (2:00 PM - 5:00 PM)">Afternoon (2:00 PM – 5:00 PM)</option>
+                    <option value="Evening (5:00 PM - 7:00 PM)">Evening (5:00 PM – 7:00 PM)</option>
+                  </select>
+                </div>
+
+                <!-- Message / Additional Requirements -->
+                <div class="col-12">
+                  <label class="form-label-custom">Requirement Details & Questions</label>
+                  <textarea name="message" rows="4" class="form-control form-control-custom" placeholder="Tell us about your target budget, desired phase (e.g. DHA Phase 6, 7 or 8), or any specific questions you'd like answered..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn-primary-custom w-100 py-3 justify-content-center fs-6">
+                    <i class="bi bi-calendar-check"></i> Book Consultation
+                  </button>
+                  <div class="text-center mt-2 text-muted small">
+                    <i class="bi bi-lock me-1"></i> Your details are strictly confidential. No marketing spam.
+                  </div>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container-site">
+      <div class="row g-5">
+        <div class="col-12 col-md-6 col-lg-4">
+          <img src="images/logo.jpeg" alt="Hasaan Real Estate" class="brand-logo-img footer-brand-logo" />
+          <p class="small text-secondary-custom mb-3" style="color: #C4B7A4 !important;">
+            <strong>Proprietor:</strong> Fahad hasaan
+          </p>
+          <p class="small leading-relaxed" style="color: #C4B7A4;">
+            A premier Karachi-based real estate consultancy helping clients buy, sell, rent, and invest with complete confidence across DHA, Clifton, Bahria Town, and other prime sectors.
+          </p>
+          <div class="footer-social-links mt-4">
+            <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/923003084176" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small text-primary"></i> Home</a></li>
+            <li><a href="properties.html"><i class="bi bi-chevron-right small text-primary"></i> Properties</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small text-primary"></i> Services</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small text-primary"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small text-primary"></i> Contact</a></li>
+            <li><a href="consultation.html"><i class="bi bi-chevron-right small text-primary"></i> Consultation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-6 col-lg-2">
+          <h4 class="footer-heading">Properties</h4>
+          <ul class="footer-links-list">
+            <li><a href="properties.html?type=House"><i class="bi bi-chevron-right small text-primary"></i> Houses</a></li>
+            <li><a href="properties.html?type=Apartment"><i class="bi bi-chevron-right small text-primary"></i> Apartments</a></li>
+            <li><a href="properties.html?type=Plot"><i class="bi bi-chevron-right small text-primary"></i> Plots</a></li>
+            <li><a href="properties.html?type=Commercial"><i class="bi bi-chevron-right small text-primary"></i> Commercial</a></li>
+            <li><a href="properties.html?purpose=Buy"><i class="bi bi-chevron-right small text-primary"></i> For Sale</a></li>
+            <li><a href="properties.html?purpose=Rent"><i class="bi bi-chevron-right small text-primary"></i> For Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <h4 class="footer-heading">Contact Information</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <strong class="text-white d-block">Office Address</strong>
+              Shop# SF-2 Tooba Apartment, DHA Phase I Garden, Karachi, Pakistan
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-telephone"></i></div>
+            <div>
+              <strong class="text-white d-block">Phone Support</strong>
+              <a href="tel:03003084176" class="text-light">0300-3084176</a> / <a href="tel:03333477745" class="text-light">0333-3477745</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-envelope"></i></div>
+            <div>
+              <strong class="text-white d-block">Email</strong>
+              <a href="mailto:fahadjunejo7@gmail.com" class="text-light">fahadjunejo7@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="bi bi-clock"></i></div>
+            <div>
+              <strong class="text-white d-block">Working Hours</strong>
+              Monday – Saturday, 10:00 AM – 7:00 PM
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>© 2026 Hasaan Real Estate. All Rights Reserved.</div>
+        <div class="d-flex gap-4">
+          <a href="about.html" class="text-secondary small">Privacy Policy</a>
+          <a href="about.html" class="text-secondary small">Terms of Service</a>
+          <a href="contact.html" class="text-secondary small">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- Application JS -->
+  <script src="js/main.js"></script>
+  <script src="js/consultation.js"></script>
+</body>
+</html>
